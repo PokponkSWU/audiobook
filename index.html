@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>[ชื่อเว็บ] หนังสือเสียง</title>
+<title>audiobook หนังสือเสียง</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+Thai:wght@600;700&amp;family=Noto+Sans+Thai:wght@400;500;700&amp;display=swap">
 
 <style>
@@ -85,7 +85,7 @@ button{cursor:pointer;font:inherit}
 
 <header style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;padding:20px 48px;max-width:1280px;margin:0 auto;box-sizing:border-box">
 <a href="#" style="display:flex;align-items:center;gap:12px;text-decoration:none;font-family:'Noto Serif Thai',serif;font-weight:700;font-size:24px">
-<span style="width:42px;height:42px;border-radius:12px;background:#0F766E;display:inline-flex;align-items:center;justify-content:center"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 14v-2a8 8 0 0 1 16 0v2"></path><rect x="3" y="14" width="4" height="6" rx="1.5"></rect><rect x="17" y="14" width="4" height="6" rx="1.5"></rect></svg></span>[ชื่อเว็บ]</a>
+<span style="width:42px;height:42px;border-radius:12px;background:#0F766E;display:inline-flex;align-items:center;justify-content:center"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 14v-2a8 8 0 0 1 16 0v2"></path><rect x="3" y="14" width="4" height="6" rx="1.5"></rect><rect x="17" y="14" width="4" height="6" rx="1.5"></rect></svg></span>audiobook</a>
 <nav style="display:flex;gap:28px;flex-wrap:wrap;font-weight:500">
 <a href="#shelf" style="text-decoration:none">หนังสือทั้งหมด</a><a href="#cats" style="text-decoration:none">หมวดหมู่</a><a href="#uses" style="text-decoration:none">ฟังได้ทุกที่</a><a href="#about" style="text-decoration:none">เกี่ยวกับเรา</a>
 </nav>
@@ -143,7 +143,7 @@ button{cursor:pointer;font:inherit}
 </section>
 
 <footer id="about" style="max-width:1280px;margin:0 auto;padding:48px 48px 24px;box-sizing:border-box;display:flex;justify-content:space-between;flex-wrap:wrap;gap:24px">
-<div style="max-width:520px"><p style="margin:0 0 8px;font-family:'Noto Serif Thai',serif;font-weight:700;font-size:20px">[ชื่อเว็บ]</p>
+<div style="max-width:520px"><p style="margin:0 0 8px;font-family:'Noto Serif Thai',serif;font-weight:700;font-size:20px">audiobook</p>
 <p style="margin:0;font-size:15px;color:#4A5565">เนื้อหาทั้งหมดได้รับอนุญาตลิขสิทธิ์เรียบร้อยแล้ว [ใส่ข้อความอ้างอิงผู้ให้สิทธิ์]</p></div>
 <nav style="display:flex;gap:24px;flex-wrap:wrap;font-size:15px;align-items:start"><a href="#">ติดต่อเรา</a><a href="#">นโยบายความเป็นส่วนตัว</a><a href="#">ข้อกำหนดการใช้งาน</a></nav>
 </footer>
@@ -177,7 +177,7 @@ var PDFMAP={};
 var BOOKDATA={},NOFILES=false;
 function pdfUrl(b){var c=window.SITE_CONFIG||{},base=c.pdfBase||'books/',f=(c.files&&c.files[b.id])||(b.id+'.pdf');return PDFMAP[b.id]||(base+encodeURIComponent(f))}
 var CATS=['นิทานเด็ก','ภาษา','กฎหมาย','การเงิน','ประวัติศาสตร์','วิทยาศาสตร์'];
-var SITE='[ชื่อเว็บ]',PLACEHOLDER='[ใส่ข้อความอ้างอิงผู้ให้สิทธิ์]';
+var SITE='audiobook',PLACEHOLDER='[ใส่ข้อความอ้างอิงผู้ให้สิทธิ์]';
 var home=document.getElementById('view-home'),story=document.getElementById('view-story'),rd=document.getElementById('view-read');
 var filter='ทั้งหมด',cur=null,lastY=0;
 function $(i){return document.getElementById(i)}
